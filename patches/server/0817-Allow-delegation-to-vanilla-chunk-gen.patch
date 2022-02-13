@@ -5,10 +5,10 @@ Subject: [PATCH] Allow delegation to vanilla chunk gen
 
 
 diff --git a/src/main/java/org/bukkit/craftbukkit/CraftServer.java b/src/main/java/org/bukkit/craftbukkit/CraftServer.java
-index 7075ee9ea0f2ac12cee7644a5f84410bb317ab70..5215ae06260f930a8e313af35a20e916e60aa6c0 100644
+index 51f537069c195edf1b7a60f233997d3cc03d304a..f81638de69a0f6935291062484244bf62e3e8a9e 100644
 --- a/src/main/java/org/bukkit/craftbukkit/CraftServer.java
 +++ b/src/main/java/org/bukkit/craftbukkit/CraftServer.java
-@@ -2307,6 +2307,107 @@ public final class CraftServer implements Server {
+@@ -2313,6 +2313,107 @@ public final class CraftServer implements Server {
          return new OldCraftChunkData(world.getMinHeight(), world.getMaxHeight(), handle.registryAccess().registryOrThrow(Registry.BIOME_REGISTRY), world); // Paper - Anti-Xray - Add parameters
      }
  
